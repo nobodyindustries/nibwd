@@ -15,10 +15,10 @@
 int
 main(const int argc, const char *argv[])
 {
-    const char* VERSION = "1.0.0";
+	const char *VERSION = "1.0.0";
 
 	if(argc != 2) {
-        fprintf(stdout, "NIBWD %s\n\n", VERSION);
+		fprintf(stdout, "NIBWD %s\n\n", VERSION);
 		fprintf(stdout, "USAGE:\t%s image_file\n", argv[0]);
 		return 1;
 	}
@@ -35,7 +35,7 @@ main(const int argc, const char *argv[])
 	// Dither the image
 	stbi_uc *img_dither_240m = ni_image_dither_floydsteinberg_gray2mono(img_grayscale_240m, w, h);
 
-    // Saves the image as BMP (lossless, useful for further processing)
+	// Saves the image as BMP (lossless, useful for further processing)
 	stbi_write_bmp("output.bmp", w, h, 1, (void *)img_dither_240m);
 
 	stbi_image_free((void *)img_data);
