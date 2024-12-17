@@ -15,7 +15,7 @@ RELEASE_FLAGS = -Oz -DNDEBUG
 
 # Source files
 SRC = $(wildcard *.c)
-FORMAT_SRC = $(SRC) $(wildcard niimg/*.h)
+FORMAT_SRC = $(SRC)
 
 # Output executables
 DEBUG_EXE = $(DEBUG_DIR)/nibwd
