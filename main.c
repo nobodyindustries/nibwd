@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "niimg/stb_image.h"
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image_write.h"
+#include "niimg/stb_image_write.h"
 
 #define NI_GRAYSCALE_IMPLEMENTATION
-#include "ni_image_grayscale.h"
+#include "niimg/ni_image_grayscale.h"
 
 #define NI_DITHER_IMPLEMENTATION
-#include "ni_image_dither.h"
+#include "niimg/ni_image_dither.h"
 
 int
 main(const int argc, const char *argv[])
