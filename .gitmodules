@@ -1,0 +1,3 @@
+[submodule "niimg"]
+	path = niimg
+	url = https://github.com/nobodyindustries/niimg.git
