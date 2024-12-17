@@ -14,8 +14,8 @@ DEBUG_FLAGS = -g -DDEBUG
 RELEASE_FLAGS = -Oz -DNDEBUG
 
 # Source files
-SRC = main.c
-FORMAT_SRC = main.c stb_image.h stb_image_write.h ni_image_utils.h ni_image_grayscale.h ni_image_dither.h
+SRC = $(wildcard *.c)
+FORMAT_SRC = $(SRC) $(wildcard *.h)
 
 # Output executables
 DEBUG_EXE = $(DEBUG_DIR)/nibwd

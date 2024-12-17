@@ -36,7 +36,7 @@
  * W -> width of the image
  * N -> number of channels
  */
-#define PX_IDX(X, Y, W, N) (int)(((X) * (W)) + (Y)) * (N)
+#define PX_IDX(X, Y, W, N) (int)(((Y) * (W)) + (X)) * (N)
 
 /**
  * Macro to determine if a set of coordinates is valid
@@ -48,7 +48,7 @@
  * 
  * returns true if X in [0, W) and Y in [0, H)
  */
-#define PX_VALID(X, Y, W, H) ((X) >= 0) && ((X) < W) && ((Y) >= 0) && ((Y) < H)
+#define PX_VALID(X, Y, W, H) ((X) >= 0) && ((X) < (W)) && ((Y) >= 0) && ((Y) < (H))
 
 /**
  * Creates a new, empty image.
